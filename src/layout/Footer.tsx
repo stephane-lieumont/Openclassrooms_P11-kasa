@@ -1,8 +1,6 @@
 import { FunctionComponent } from "react";
 import Logo from './../assets/logo.svg'
 
-import './Footer.scss'
-
 const Footer: FunctionComponent = () => {  
   return (
     <footer>

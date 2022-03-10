@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const HousingSheet: FunctionComponent = () => {
   return (
-    <h1>Fiche Logement</h1>
+    <h2>Fiche Logement</h2>
   );
 }
 

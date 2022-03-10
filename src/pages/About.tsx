@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 const About: FunctionComponent = () => {
   return (
-    <h1>A Propos de Kasa</h1>
+    <h2>A Propos de Kasa</h2>
   );
 }
 

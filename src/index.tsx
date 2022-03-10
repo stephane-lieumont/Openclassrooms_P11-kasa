@@ -10,16 +10,20 @@ import About from './pages/About'
 import HousingSheet from './pages/HousingSheet'
 import Error404 from './pages/Error404'
 
+import './styles/main.scss'
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />        
-        <Route path="/fiche_logement" element={<HousingSheet />} />
-        <Route path="/a_propos_de_kasa" element={<About />} />
-        <Route path="*" element={<Error404 />}/>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />        
+          <Route path="/fiche_logement" element={<HousingSheet />} />
+          <Route path="/a_propos_de_kasa" element={<About />} />
+          <Route path="*" element={<Error404 />}/>
+        </Routes>
+      </main>
       <Footer />
     </Router>
   </React.StrictMode>,

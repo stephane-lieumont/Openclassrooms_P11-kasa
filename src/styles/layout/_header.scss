@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: spacer();
+  padding-right: spacer();
+  padding-left: spacer();
+  padding-bottom: spacer(0.5);
+
+  svg {
+    fill:#FF6060
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: spacer();
+    }
+
+    li {
+      list-style: none;
+      a {
+        color:$primary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

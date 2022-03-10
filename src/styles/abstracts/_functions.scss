@@ -1,0 +1,4 @@
+// multiplier of space application define in $base-spacing
+@function spacer($multiple: 1) {
+  @return $base-spacing * $multiple;
+}
