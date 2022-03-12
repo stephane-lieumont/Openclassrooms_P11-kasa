@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -20,8 +20,16 @@ body{
 
 main {
   flex-grow: 1;
+  flex-direction: column;
+  gap: spacer();
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding-left: spacer();
   padding-right: spacer();
+  max-width: $max-screen-lg;
+  padding-bottom: spacer();
 }
 
 h2, h3, h4 {
@@ -38,4 +46,16 @@ p {
   font-size:18px;
   font-weight: 400;
   color: $primary;
+}
+
+.max-screen-lg {
+  max-width: $max-screen-lg;
+}
+
+a {
+  color: $primary;
+}
+
+.text-center {
+  text-align: center;
 }

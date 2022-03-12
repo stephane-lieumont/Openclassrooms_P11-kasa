@@ -4,8 +4,10 @@ import Logo from './../assets/logo.svg'
 const Footer: FunctionComponent = () => {  
   return (
     <footer>
-      <svg width="122" height="40"><use xlinkHref={Logo + '#logo'}></use></svg>
-      <p>© { (new Date().getFullYear()) } Kasa. All rights reserved</p>
+      <div className="container max-screen-lg">
+        <svg width="122" height="40"><use xlinkHref={Logo + '#logo'}></use></svg>
+        <p>© { (new Date().getFullYear()) } Kasa. All rights reserved</p>
+      </div>
     </footer>    
   );
 }

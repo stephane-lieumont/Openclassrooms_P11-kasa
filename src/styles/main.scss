@@ -1,14 +1,28 @@
+// Adstract
 @import 
   './abstracts/variables',
   './abstracts/functions';
 
+// Theme
 @import
   './themes/colors';
 
+// Base
 @import
   './base/reset',
   './base/base';
 
+// Layout
 @import
   './layout/header',
   './layout/footer';
+
+// Pages
+@import
+  './pages/error404',
+  './pages/home';
+
+// Components
+@import
+  './components/headPicture',
+  './components/cardHousing';

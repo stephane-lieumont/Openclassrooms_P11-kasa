@@ -1,11 +1,18 @@
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: spacer();
-  padding-right: spacer();
-  padding-left: spacer();
-  padding-bottom: spacer(0.5);
+  justify-content: center;
+  
+
+  .container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: spacer();
+    padding-right: spacer();
+    padding-left: spacer();
+    padding-bottom: spacer(0.5);
+  }
 
   svg {
     fill:#FF6060

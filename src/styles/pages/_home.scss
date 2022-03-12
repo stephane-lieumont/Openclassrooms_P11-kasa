@@ -1,0 +1,10 @@
+.housings-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: spacer();
+  background-color: $greyLight;
+  border-radius: 25px;
+  gap:spacer(2);
+}

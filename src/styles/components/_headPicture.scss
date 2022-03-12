@@ -1,0 +1,53 @@
+.head-picture {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  img {
+    object-fit: cover;
+    min-width: 100%;
+  }
+
+  p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 48px;
+  }
+
+  &__overlay {
+    &::before {
+      content: '';
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+
+  &--large {
+    height: 415px;
+
+    img {
+      height: 415px;
+    }
+  }
+
+  &--medium {
+    height: 225px;
+
+    img {
+      height: 225px;
+    }
+  }
+}

@@ -1,12 +1,8 @@
 footer {
   display:flex;
-  flex-direction: column;
+  background-color: black;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  padding: spacer();
-  padding-bottom: spacer(0.2);
-  padding-top: spacer(2);
 
   svg{
     fill:white;
@@ -15,5 +11,15 @@ footer {
   p {
     margin-top:spacer();
     color: white;
+  }
+
+  .container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: spacer();
+    padding-bottom: spacer();
+    padding-top: spacer(2);
   }
 }
