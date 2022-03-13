@@ -1,0 +1,15 @@
+.stars {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  &__item{
+    &--active{
+      fill: $primary;
+    }
+    &--off{
+      fill: $grey
+    }
+  }
+}

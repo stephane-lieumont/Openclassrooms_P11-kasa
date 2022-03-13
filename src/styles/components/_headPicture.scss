@@ -36,10 +36,10 @@
   }
 
   &--large {
-    height: 415px;
+    height: $img-height;
 
     img {
-      height: 415px;
+      height: $img-height;
     }
   }
 

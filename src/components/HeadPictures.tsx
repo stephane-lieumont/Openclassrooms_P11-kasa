@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import DefaultPicture from './../assets/home-picture-bg.jpg'
 
 export enum HeightSize {
   large,
@@ -7,13 +6,13 @@ export enum HeightSize {
 }
 
 type HeaderPicturesProps = {
-  picture?: string,
   content?: string,
-  heightSize?: HeightSize
+  heightSize?: HeightSize,
+  children?: React.ReactNode
 }
 
 
-const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({picture, content, heightSize}: HeaderPicturesProps) => {
+const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({content, heightSize, children}: HeaderPicturesProps) => {
 
   const getClassName = (): string => {
     switch(heightSize) {
@@ -28,7 +27,7 @@ const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({picture, content,
 
   return (
     <div className={`head-picture ${getClassName()}`}>
-      <img src={picture ? picture : DefaultPicture } alt="head" />
+      {children}
       {content && 
         <p>{content}</p>
       }

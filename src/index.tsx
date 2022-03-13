@@ -19,7 +19,7 @@ ReactDOM.render(
       <main>
         <Routes>
           <Route path="/" element={<Home />} />        
-          <Route path="/fiche-logement" element={<HousingSheet />} />
+          <Route path="/fiche-logement/:housingId/:name" element={<HousingSheet />} />
           <Route path="/a-propos-de-kasa" element={<About />} />
           <Route path="*" element={<Error404 />}/>
         </Routes>

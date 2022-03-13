@@ -1,0 +1,54 @@
+.housing {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: spacer(0.6) 0;
+
+    li {
+      background-color: $primary;
+      border-radius: 10px;
+      line-height: 25px;
+      color:white;
+      padding:0 10px;
+      font-size: 14px;
+    }
+  }
+
+  &__author{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: spacer(0.5);
+
+    &__description {
+      width:80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: nowrap;
+      align-items: center;
+      align-content: flex-end;
+      gap: spacer(0.5);
+      text-align: right;      
+    }
+  }
+}
+
+#details {
+  display:flex;
+  gap: spacer(2);
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: spacer();
+
+  .dropdown {
+    flex: 1 0 auto;
+    max-width: 50%;
+  }
+}

@@ -30,7 +30,7 @@ header {
         color:$primary;
         text-decoration: none;
 
-        &:hover {
+        &:hover, &.active {
           text-decoration: underline;
         }
       }

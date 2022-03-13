@@ -36,16 +36,23 @@ h2, h3, h4 {
   font-size: 2rem;
   font-weight: 500;
   color: $primary;
+  line-height: 3rem;
 }
 
 h3 {
   font-size: 18px;
+  line-height: 1.6rem;
 }
 
 p {
   font-size:18px;
   font-weight: 400;
+  line-height: 1.5rem;
   color: $primary;
+}
+
+li {
+  line-height: 1.7rem;
 }
 
 .max-screen-lg {
@@ -58,4 +65,18 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 64px;
+  width: 64px;
+  flex-shrink: 0;
+
+  img {
+    object-fit: cover;
+    width:100%;
+    min-height: 100%;
+  }
 }

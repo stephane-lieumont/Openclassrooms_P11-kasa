@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react"
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Logo from './../assets/logo.svg'
 
 const Header: FunctionComponent = () => {
@@ -11,8 +11,8 @@ const Header: FunctionComponent = () => {
         </Link>
         <nav>
           <ul>
-            <li><Link to="/">Acceuil</Link></li>
-            <li><Link to="/a-propos-de-kasa">A propos</Link></li>
+            <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">Acceuil</NavLink></li>
+            <li><NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/a-propos-de-kasa">A propos</NavLink></li>
           </ul>
         </nav>
       </div>

@@ -20,9 +20,15 @@
 // Pages
 @import
   './pages/error404',
-  './pages/home';
+  './pages/home',
+  './pages/housingSheet',
+  './pages/about';
 
 // Components
 @import
   './components/headPicture',
-  './components/cardHousing';
+  './components/cardHousing',
+  './components/loader',
+  './components/stars',
+  './components/dropdownContent',
+  './components/carousel';
