@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/css/main.c3d051dc.css",
-    "main.js": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/js/main.5b4abb48.js",
-    "static/media/about-picture.jpg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/about-picture.5e30ecd5364ddd46499c.jpg",
-    "static/media/home-picture.jpg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/home-picture.8dbc3e4ffb4f7b0b3bc8.jpg",
-    "static/media/logo.svg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/logo.aadd700c502a610312fc85b5821ecab7.svg",
-    "index.html": "https://stephaneli.github.io/StephaneLieumont_11_10032022/index.html",
-    "static/media/arrow-bottom.svg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/arrow-bottom.b052dd29e3a2bab76700.svg",
-    "static/media/arrow-next.svg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/arrow-next.f114b3d36e56c8c21783.svg",
-    "static/media/arrow-next-sm.svg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/arrow-next-sm.dda9892314ac4a082ee6.svg",
-    "static/media/star.svg": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/media/star.44a2ac27ac6046ff74db214c3bcdd08f.svg",
-    "main.c3d051dc.css.map": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/css/main.c3d051dc.css.map",
-    "main.5b4abb48.js.map": "https://stephaneli.github.io/StephaneLieumont_11_10032022/static/js/main.5b4abb48.js.map"
+    "main.css": "https://oc.sli-3d.fr/P11_Kasa/static/css/main.dec97e76.css",
+    "main.js": "https://oc.sli-3d.fr/P11_Kasa/static/js/main.83bcb26c.js",
+    "static/media/about-picture.jpg": "https://oc.sli-3d.fr/P11_Kasa/static/media/about-picture.5e30ecd5364ddd46499c.jpg",
+    "static/media/home-picture.jpg": "https://oc.sli-3d.fr/P11_Kasa/static/media/home-picture.8dbc3e4ffb4f7b0b3bc8.jpg",
+    "static/media/logo.svg": "https://oc.sli-3d.fr/P11_Kasa/static/media/logo.aadd700c502a610312fc85b5821ecab7.svg",
+    "index.html": "https://oc.sli-3d.fr/P11_Kasa/index.html",
+    "static/media/arrow-bottom.svg": "https://oc.sli-3d.fr/P11_Kasa/static/media/arrow-bottom.b052dd29e3a2bab76700.svg",
+    "static/media/arrow-next.svg": "https://oc.sli-3d.fr/P11_Kasa/static/media/arrow-next.f114b3d36e56c8c21783.svg",
+    "static/media/arrow-next-sm.svg": "https://oc.sli-3d.fr/P11_Kasa/static/media/arrow-next-sm.dda9892314ac4a082ee6.svg",
+    "static/media/star.svg": "https://oc.sli-3d.fr/P11_Kasa/static/media/star.44a2ac27ac6046ff74db214c3bcdd08f.svg",
+    "main.dec97e76.css.map": "https://oc.sli-3d.fr/P11_Kasa/static/css/main.dec97e76.css.map",
+    "main.83bcb26c.js.map": "https://oc.sli-3d.fr/P11_Kasa/static/js/main.83bcb26c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3d051dc.css",
-    "static/js/main.5b4abb48.js"
+    "static/css/main.dec97e76.css",
+    "static/js/main.83bcb26c.js"
   ]
 }
