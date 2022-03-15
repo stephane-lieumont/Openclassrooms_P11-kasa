@@ -73,10 +73,16 @@ a {
   height: 64px;
   width: 64px;
   flex-shrink: 0;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
 
   img {
     object-fit: cover;
     width:100%;
     min-height: 100%;
+  }
+
+  &.loaded {
+    opacity: 1;
   }
 }

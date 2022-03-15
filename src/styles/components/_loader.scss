@@ -4,6 +4,24 @@
   justify-content: center;
   width: 100%;
   padding:spacer();
+
+  &--absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &--light{
+    opacity: 0.5;
+
+    .loader {
+      border-color: white;
+      border-bottom-color: transparent;
+    }
+  }
 }
 
 .loader {

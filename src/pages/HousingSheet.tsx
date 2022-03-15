@@ -13,6 +13,8 @@ const HousingSheet: FunctionComponent = () => {
   const [housingData, setHousingData] = useState<IHousingData>()
   const [errorAPI, setErrorAPI] = useState<boolean>(false)
   const [isLoading, setIsLoading] = useState<boolean>(true)
+  const [sliderIsLoading, setSliderIsLoading] = useState<boolean>(true)
+  const [avatarIsLoading, setAvatarIsLoading] = useState<boolean>(true)
 
   useEffect(() => {
     HousingService.getById(housingId!)
@@ -31,7 +33,14 @@ const HousingSheet: FunctionComponent = () => {
   if (errorAPI) {
     return <h2 className="text-center">Oups il y a eu un problème</h2>
   }
-  
+
+  const handleLoadedPictures = () => {
+    setSliderIsLoading(false)
+  }
+
+  const avatarLoaded = () => {
+    setAvatarIsLoading(false)
+  }
 
   return (
     <Fragment>
@@ -40,8 +49,11 @@ const HousingSheet: FunctionComponent = () => {
     ):(
       <Fragment>
         <section id="heading">
-          <HeadPictures heightSize={HeightSize.large} >
-            <Carousel pictures={housingData?.pictures} title={housingData?.title} />
+          <HeadPictures 
+            heightSize={HeightSize.large}
+            isLoading={sliderIsLoading}
+          >
+            <Carousel pictures={housingData?.pictures} title={housingData?.title} handleLoad={ handleLoadedPictures } />
           </HeadPictures>                
         </section>
         <section id ="description">
@@ -58,8 +70,8 @@ const HousingSheet: FunctionComponent = () => {
             <aside className="housing__author">
               <div className="housing__author__description">           
                 <h3>{housingData?.host.name}</h3>
-                <div className="avatar">
-                  <img src={housingData?.host.picture} alt={housingData?.host.name}/>
+                <div className={ avatarIsLoading ? 'avatar' : 'avatar loaded'}>
+                  <img src={housingData?.host.picture} onLoad={ avatarLoaded } alt={housingData?.host.name}/>
                 </div>
               </div>   
               <Stars count={housingData?.rating!} />

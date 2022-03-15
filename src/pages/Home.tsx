@@ -11,6 +11,7 @@ const Home: FunctionComponent = () => {
   const[housings, setHousings] = useState<Array<IHousingData>>([])
   const[errorAPI, setErrorAPI] = useState<boolean>(false)
   const[isLoading, setIsLoading] = useState<boolean>(true)
+  const[headingIsLoading, setHeadingIsLoading] = useState<boolean>(true)
 
   // Call Datas API
   useEffect(() => {  
@@ -32,12 +33,21 @@ const Home: FunctionComponent = () => {
     return <h2 className="text-center">Oups il y a eu un problème</h2>
   }
 
+  const handleLoad = () => {
+    setHeadingIsLoading(false)
+  }
+
   // Else display Housings Cards
   return (
     <Fragment>
       <section id="heading">
-        <HeadPictures heightSize={HeightSize.medium} content="Chez vous, partout et ailleurs" >
-          <img src={HomePicture} alt="home landscape" />
+        <HeadPictures 
+          heightSize={HeightSize.medium} 
+          content="Chez vous, partout et ailleurs"
+          isLoading={headingIsLoading}
+          overlay
+        >
+          <img src={HomePicture} alt="home landscape" onLoad={ handleLoad } />
         </HeadPictures>
       </section>
       <section id="housings">        

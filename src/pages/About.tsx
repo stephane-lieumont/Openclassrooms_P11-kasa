@@ -1,14 +1,24 @@
-import { FunctionComponent, Fragment } from "react"
+import { FunctionComponent, Fragment, useState } from "react"
 import HeadPictures, { HeightSize } from "../components/HeadPictures"
 import AboutPicture from "../assets/about-picture.jpg"
 import DropdownContent from "../components/DropdownContent"
 
 const About: FunctionComponent = () => {
+  const[headingIsLoading, setHeadingIsLoading] = useState<boolean>(true)
+
+  const handleLoad = () => {
+    setHeadingIsLoading(false)
+  }
+
   return (
     <Fragment>
       <section id="heading">
-        <HeadPictures heightSize={HeightSize.medium} >
-          <img src={AboutPicture} alt="about landscape" />
+        <HeadPictures 
+          heightSize={HeightSize.medium}
+          overlay
+          isLoading={headingIsLoading}
+        >
+          <img src={AboutPicture} alt="about landscape" onLoad={ handleLoad } />
         </HeadPictures>
       </section>
       <section id="about">

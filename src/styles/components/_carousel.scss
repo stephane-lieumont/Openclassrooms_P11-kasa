@@ -23,23 +23,52 @@
   }
 
   &__item {
-    width: 20%;
+    width: 100%;
     img {
       min-width: 100%;
-      height: $img-height;
+      height: $img-height-large;
       object-fit: cover;
     }
   }
 
   &__counter {
     position: absolute;
+    display: flex;
+    justify-content: center;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 15%;    
 
     p {
       font-size: 18px!important;
+      color:white;
+    }    
+  }
+
+  &__control{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:spacer();
+
+    &__next, &__previous {
+      background-image: url(../../assets/arrow-next.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      height:80px;
+      width: 50px;
+      overflow: hidden;
+      text-indent: 999px;
+      cursor: pointer;
     }
-    
+
+    &__next {
+      transform: rotate(180deg);
+    }
   }
 }

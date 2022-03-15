@@ -5,49 +5,80 @@
   border-radius: 25px;
   overflow: hidden;
 
-  img {
-    object-fit: cover;
-    min-width: 100%;
-  }
-
-  p {
+  &__loader, &__container, &__overlay::before, &__content {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     top:0;
-    left: 0;
+    left:0;
     height: 100%;
     width: 100%;
-    color: white;
-    font-size: 48px;
+  }
+
+  &__loader {
+    z-index: 1;
+  }
+
+  &__container {
+    z-index: 2;
+    img {
+      object-fit: cover;
+      min-width: 100%;      
+    }
   }
 
   &__overlay {
     &::before {
       content: '';
-      position: absolute;
-      top:0;
-      left: 0;
-      height: 100%;
-      width: 100%;
       background-color: rgba($color: #000000, $alpha: 0.5);
+      z-index: 3;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);
+    z-index: 4;
+    
+    p {
+      color: white;
+      font-size: 48px;
     }
   }
 
   &--large {
-    height: $img-height;
+    height: $img-height-large;
 
     img {
-      height: $img-height;
+      height: $img-height-large;
     }
   }
 
   &--medium {
-    height: 225px;
+    height: $img-height-medium;
 
     img {
-      height: 225px;
+      height: $img-height-medium;
     }
+  }
+
+  .loading, &.loading::before  {
+    opacity: 0!important;
+  }
+
+  [class*="loaded-"], &[class*="loaded-"]::before {
+    opacity: 1!important;
+    transition: opacity .3s ease-in-out, transform .5s ease-out;
+    transform: translateY(0px);
+  }
+
+  .loaded-1, &.loaded-1::before {
+    transition-delay: .1s;
+  }
+  .loaded-2, &.loaded-2::before {
+    transition-delay: .4s;
+  }
+  .loaded-3, &.loaded-3::before {
+    transition-delay: .8s;
   }
 }

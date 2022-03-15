@@ -1,4 +1,5 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent } from "react"
+import Loader from "./Loader"
 
 export enum HeightSize {
   large,
@@ -8,28 +9,39 @@ export enum HeightSize {
 type HeaderPicturesProps = {
   content?: string,
   heightSize?: HeightSize,
-  children?: React.ReactNode
+  overlay?:boolean,
+  children?: React.ReactNode,
+  isLoading?: boolean
 }
 
 
-const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({content, heightSize, children}: HeaderPicturesProps) => {
-
-  const getClassName = (): string => {
-    switch(heightSize) {
-      case HeightSize.large:
-        return "head-picture--large"
-      case HeightSize.medium:
-        return "head-picture--medium head-picture__overlay"
-      default:
-        return ""
-    }
-  }
-
+const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({content, heightSize, children, isLoading = false, overlay = false}: HeaderPicturesProps) => {
   return (
-    <div className={`head-picture ${getClassName()}`}>
-      {children}
-      {content && 
-        <p>{content}</p>
+    <div className={
+      'head-picture ' +
+      (heightSize === HeightSize.large ? 'head-picture--large ' : '') +
+      (heightSize === HeightSize.medium ? 'head-picture--medium ': '') +
+      (overlay ? 'head-picture__overlay ' : '') + 
+      (isLoading ? 'loading' : 'loaded-1') 
+    }>
+      {isLoading === true &&
+        <div className="head-picture__loader">
+          <Loader absolute />
+        </div>
+      }
+      <div className={
+        "head-picture__container " +
+        (isLoading ? 'loading' : 'loaded-1') 
+      }>
+        {children}
+      </div>
+      {content &&
+        <div className={
+          "head-picture__content " +
+          (isLoading ? 'loading' : 'loaded-2') 
+        }>
+          <p>{content}</p>
+        </div>
       }
     </div>
   );

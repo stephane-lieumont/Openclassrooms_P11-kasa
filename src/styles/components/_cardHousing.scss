@@ -3,7 +3,7 @@
   overflow: hidden;
   border-radius: 10px;
   height: 340px;
-  max-width: 340px;
+  width: 340px;
   background: $primary;
 
   &::before {
@@ -25,10 +25,22 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
+    z-index: 3;
   }
+
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
     width: 100%;
     min-height: 100%;
+    opacity: 0;
+    z-index: 2;
+
+    &.loaded {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out 0.3s;
+    }
   }
 }
