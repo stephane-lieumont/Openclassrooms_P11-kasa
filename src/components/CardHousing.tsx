@@ -2,12 +2,13 @@ import { FunctionComponent, useEffect, useState } from "react"
 import Loader from "./../components/Loader"
 
 type CardHousingProps = {
+  id?: number
   picture?: string,
   title?: string
 }
 
 
-const CardHousing: FunctionComponent<CardHousingProps> = ({title ="titre de la location", picture}: CardHousingProps) => {
+const CardHousing: FunctionComponent<CardHousingProps> = ({title ="titre de la location", picture, id}: CardHousingProps) => {
   const [loading, setLoading] = useState<boolean>(true)
   const [destroyLoader, setDestroyLoader] = useState<boolean>(false)
 
@@ -23,7 +24,7 @@ const CardHousing: FunctionComponent<CardHousingProps> = ({title ="titre de la l
   }, [loading])
 
   return (
-    <div className="card-housing">
+    <div className={`card-housing card-housing--${id}`}>
       <h3>{ title }</h3>
       { !destroyLoader &&
         <Loader absolute light />

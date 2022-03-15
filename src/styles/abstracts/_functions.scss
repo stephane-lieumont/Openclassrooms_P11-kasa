@@ -1,4 +1,7 @@
 // multiplier of space application define in $base-spacing
-@function spacer($multiple: 1) {
+@function spacer($multiple: 1, $mediaquery: '') {
+  @if( $mediaquery == 'sm') {
+    @return $base-spacing-sm * $multiple;
+  }
   @return $base-spacing * $multiple;
 }

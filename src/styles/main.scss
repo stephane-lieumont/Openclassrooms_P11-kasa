@@ -17,13 +17,6 @@
   './layout/header',
   './layout/footer';
 
-// Pages
-@import
-  './pages/error404',
-  './pages/home',
-  './pages/housingSheet',
-  './pages/about';
-
 // Components
 @import
   './components/headPicture',
@@ -32,3 +25,10 @@
   './components/stars',
   './components/dropdownContent',
   './components/carousel';
+
+// Pages
+@import
+  './pages/error404',
+  './pages/home',
+  './pages/housingSheet',
+  './pages/about';

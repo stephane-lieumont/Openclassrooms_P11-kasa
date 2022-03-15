@@ -51,6 +51,15 @@
     max-height: 48px;
     transition: max-height .3s ease-in-out, padding .2s ease-in-out;
     overflow: hidden;
+    font-size: 1.5rem;
+
+    li {
+      line-height: 1.7rem;
+    }
+
+    p {
+      line-height: 1.7rem;
+    }
   }
 
   &--expanded {
@@ -65,6 +74,45 @@
         padding:spacer(0.7) spacer(0.6);
         padding-top: 4rem;
         max-height: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .dropdown {
+
+    &__content {
+      max-height: 30px;
+      font-size: 0.75rem;
+      transition: max-height .2s ease-in-out .1s, padding .3s ease-in-out;
+
+      li {
+        font-size: 0.75rem;
+        line-height: 1.2rem;      
+      }
+
+      p {
+        line-height: 1.2rem;
+      }
+    }
+
+    &__title {
+      font-size: 0.8rem;
+      line-height: 2.3rem;
+
+      &::after {
+        height: 2.3rem;
+        background-size: 80%;
+      }
+    }
+    
+    &--expanded {
+      .dropdown {
+        &__content {
+          padding:spacer(0.6);
+          padding-top: spacer(1.6);
+        }
       }
     }
   }

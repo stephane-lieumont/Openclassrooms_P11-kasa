@@ -23,3 +23,12 @@ footer {
     padding-top: spacer(2);
   }
 }
+
+@media (max-width: $screen-sm) {
+  footer {    
+    padding: spacer(1, 'sm');
+    .container {
+      padding: spacer();
+    }
+  }
+}

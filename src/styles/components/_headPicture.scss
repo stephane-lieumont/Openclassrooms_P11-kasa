@@ -40,9 +40,11 @@
     transform: translateY(50px);
     z-index: 4;
     
-    p {
+    h2 {
       color: white;
-      font-size: 48px;
+      font-size: 3rem;
+      line-height: 3rem;
+      padding: spacer();
     }
   }
 
@@ -80,5 +82,32 @@
   }
   .loaded-3, &.loaded-3::before {
     transition-delay: .8s;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .head-picture {
+    border-radius: 10px;
+    
+    h2 {
+      font-size: 1.5rem;
+      line-height: normal;
+    }
+
+    &--medium {
+      height: $img-height-sm-medium;
+  
+      img {
+        height: $img-height-sm-medium;
+      }
+    }
+
+    &--large {
+      height: $img-height-sm-large;
+  
+      img {
+        height: $img-height-sm-large;
+      }
+    }
   }
 }

@@ -12,7 +12,7 @@ const About: FunctionComponent = () => {
 
   return (
     <Fragment>
-      <section id="heading">
+      <div id="heading" className="heading-lg">
         <HeadPictures 
           heightSize={HeightSize.medium}
           overlay
@@ -20,7 +20,7 @@ const About: FunctionComponent = () => {
         >
           <img src={AboutPicture} alt="about landscape" onLoad={ handleLoad } />
         </HeadPictures>
-      </section>
+      </div>
       <section id="about">
         <DropdownContent title="Fiabilité">
           <p>Les annonces postées sur Kasa garantissent une fiabilité totale.

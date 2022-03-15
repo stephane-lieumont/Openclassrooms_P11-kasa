@@ -40,7 +40,7 @@ const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({content, heightSi
           "head-picture__content " +
           (isLoading ? 'loading' : 'loaded-2') 
         }>
-          <p>{content}</p>
+          <h2>{content}</h2>
         </div>
       }
     </div>

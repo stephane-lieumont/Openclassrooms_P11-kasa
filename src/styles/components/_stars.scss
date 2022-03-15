@@ -13,3 +13,15 @@
     }
   }
 }
+
+
+@media (max-width: $screen-sm) {
+  .stars {
+    gap: 5px;
+
+    svg {
+      height: 15px;
+      width: 15px;
+    }
+  }
+}

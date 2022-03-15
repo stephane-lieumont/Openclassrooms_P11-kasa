@@ -40,7 +40,7 @@ const Home: FunctionComponent = () => {
   // Else display Housings Cards
   return (
     <Fragment>
-      <section id="heading">
+      <div id="heading">
         <HeadPictures 
           heightSize={HeightSize.medium} 
           content="Chez vous, partout et ailleurs"
@@ -49,16 +49,16 @@ const Home: FunctionComponent = () => {
         >
           <img src={HomePicture} alt="home landscape" onLoad={ handleLoad } />
         </HeadPictures>
-      </section>
+      </div>
       <section id="housings">        
         <ul className="housings-list">
           {isLoading &&
             <Loader />
           }
-          {housings.map((housing) => (
+          {housings.map((housing, index) => (
             <li key={housing.id}>
               <Link to={`/fiche-logement/${housing.id}/${housing.title.replace(/ /g,"_")}`}>
-                <CardHousing picture={housing.cover} title={housing.title}/>
+                <CardHousing picture={housing.cover} title={housing.title} id={index} />
               </Link>
             </li>
           ))}

@@ -21,6 +21,7 @@ header {
   nav {
     ul {
       display: flex;
+      flex-wrap: nowrap;
       gap: spacer();
     }
 
@@ -29,11 +30,29 @@ header {
       a {
         color:$primary;
         text-decoration: none;
+        white-space: nowrap;
 
         &:hover, &.active {
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+  header {
+    nav ul {
+      gap: spacer(1, 'sm');
+
+      a {
+        font-size: .75rem;
+        text-transform: uppercase;
+      }
+    }
+    svg {
+      width: 145px;
+      height: 47px;
     }
   }
 }

@@ -25,7 +25,7 @@ main {
   align-self: center;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: spacer();
   padding-right: spacer();
   max-width: $max-screen-lg;
@@ -45,14 +45,15 @@ h3 {
 }
 
 p {
-  font-size:18px;
+  font-size:1.2rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: $primary;
 }
 
 li {
-  line-height: 1.7rem;
+  font-size:1.2rem;
+  line-height: 1.5rem;
 }
 
 .max-screen-lg {
@@ -84,5 +85,27 @@ a {
 
   &.loaded {
     opacity: 1;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  p {
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size:1.3rem;
+    line-height: normal;
+  }
+
+  h3 {
+    font-size:0.85rem;
+    line-height: 1.8rem;
+  }
+
+  main {    
+    padding: spacer(1, 'sm');
+    padding-top: 0;
+    gap: spacer(1.2, 'sm');
   }
 }

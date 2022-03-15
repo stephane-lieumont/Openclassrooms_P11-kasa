@@ -4,7 +4,15 @@
   border-radius: 10px;
   height: 340px;
   width: 340px;
-  background: $primary;
+  opacity: 0;
+  background: $primary;  
+
+  @for $i from 0 through 50 {
+    &--#{$i} {
+      animation: reveal .4s ease-out both;
+      animation-delay: 0.15s * $i;
+    }
+  }
 
   &::before {
     content: "";
@@ -23,7 +31,7 @@
     padding:15px;
     line-height: 1.5rem;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     z-index: 3;
   }
@@ -40,7 +48,32 @@
 
     &.loaded {
       opacity: 1;
-      transition: opacity 0.3s ease-in-out 0.3s;
+      transition: opacity 0.3s ease-in-out;
+
+      &:hover { 
+        transition-delay: 0s!important;
+        transition-duration: 0.15s!important ;
+        opacity: 0.5!important;
+      }
     }
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .card-housing {
+    flex-grow: 1 ;
+    height: 255px;
+    width: 100%;
   }
 }

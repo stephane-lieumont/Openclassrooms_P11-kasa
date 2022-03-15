@@ -48,14 +48,14 @@ const HousingSheet: FunctionComponent = () => {
       <Loader />
     ):(
       <Fragment>
-        <section id="heading">
+        <div id="heading">
           <HeadPictures 
             heightSize={HeightSize.large}
             isLoading={sliderIsLoading}
           >
             <Carousel pictures={housingData?.pictures} title={housingData?.title} handleLoad={ handleLoadedPictures } />
           </HeadPictures>                
-        </section>
+        </div>
         <section id ="description">
           <div className="housing">
             <div className="housing__title">

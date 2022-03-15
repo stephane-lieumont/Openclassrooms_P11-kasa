@@ -31,13 +31,16 @@ const Carousel: FunctionComponent<CarouselProps> = ({title, pictures = [], handl
 
   // Timer Slider
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextPicture(index, nbrPictures)  
-    }, 5000);
-    return () => {
-      clearInterval(interval);
+    if(picturesLoaded === nbrPictures) {
+      const interval = setInterval(() => {
+        nextPicture(index, nbrPictures)  
+      }, 5000);
+      return () => {
+        clearInterval(interval);
+      }
     }
-  }, [index, nbrPictures]);
+
+  }, [index, nbrPictures, picturesLoaded]);
 
   // Loading pictures
   useEffect(() => {
@@ -57,7 +60,12 @@ const Carousel: FunctionComponent<CarouselProps> = ({title, pictures = [], handl
         }}>
         <ul className="carousel__group" style={{width: 100 * nbrPictures + '%'}}>
           {pictures?.map((picture, index) => (
-            <li key={index} className="carousel__item"><img src={picture} onLoad={loadPicture} alt={`${title} ${index}`}></img></li>
+            <li key={index} className="carousel__item" style={{
+              flexBasis: 100 / nbrPictures + '%',
+              width: 100 / nbrPictures + '%'
+            }}>
+              <img src={picture} onLoad={loadPicture} alt={`${title} ${index}`} />
+            </li>
           ))}
         </ul>
       </div>
