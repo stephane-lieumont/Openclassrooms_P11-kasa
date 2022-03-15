@@ -1,5 +1,6 @@
 {
   "name": "kasa",
+  "homepage": "https://oc.sli-3d.fr/P11_Kasa/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

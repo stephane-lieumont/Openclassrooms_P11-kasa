@@ -1,6 +1,8 @@
 import IHousingData from "../types/IHousingData"
 
-const urlMockHousingsAll: string = "/__mock/housings.json"
+const urlMockHousingsAll: string = process.env.PUBLIC_URL + "/__mock/housings.json"
+
+
 
 const getAll = async (): Promise<IHousingData[]> => {
   let response: any
