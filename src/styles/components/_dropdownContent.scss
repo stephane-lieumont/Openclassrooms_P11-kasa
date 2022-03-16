@@ -5,7 +5,7 @@
   &__title {
     position: absolute;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: white;
     background-color: $primary;
     border-radius: 5px;
@@ -51,7 +51,6 @@
     max-height: 48px;
     transition: max-height .3s ease-in-out, padding .2s ease-in-out;
     overflow: hidden;
-    font-size: 1.5rem;
 
     li {
       line-height: 1.7rem;

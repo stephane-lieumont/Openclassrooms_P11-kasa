@@ -5,7 +5,12 @@ type LoaderProps = {
   light?: boolean
 } 
 
-
+/**
+ * React Component function : Loader
+ * @param props Component props
+ * @param props.absolute Css position configuration
+ * @param props.light Type color of loader
+ */
 const Loader: FunctionComponent<LoaderProps> = ({absolute = false, light = false} : LoaderProps) => {
   return (
     <div className={`loader-container 

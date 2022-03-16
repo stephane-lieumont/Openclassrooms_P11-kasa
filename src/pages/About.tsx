@@ -3,9 +3,13 @@ import HeadPictures, { HeightSize } from "../components/HeadPictures"
 import AboutPicture from "../assets/about-picture.jpg"
 import DropdownContent from "../components/DropdownContent"
 
+/**
+ * React Component function : About page
+ */
 const About: FunctionComponent = () => {
   const[headingIsLoading, setHeadingIsLoading] = useState<boolean>(true)
 
+  // Heading image load
   const handleLoad = () => {
     setHeadingIsLoading(false)
   }

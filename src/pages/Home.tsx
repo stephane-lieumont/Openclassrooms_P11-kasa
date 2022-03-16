@@ -7,6 +7,9 @@ import HousingService from "../services/HousingService"
 import IHousingData from "../types/IHousingData"
 import HomePicture from "../assets/home-picture.jpg"
 
+/**
+ * React Component function : Home page
+ */
 const Home: FunctionComponent = () => {
   const[housings, setHousings] = useState<Array<IHousingData>>([])
   const[errorAPI, setErrorAPI] = useState<boolean>(false)
@@ -33,6 +36,7 @@ const Home: FunctionComponent = () => {
     return <h2 className="text-center">Oups il y a eu un problème</h2>
   }
 
+  // Load head picture
   const handleLoad = () => {
     setHeadingIsLoading(false)
   }

@@ -1,6 +1,9 @@
 import { FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 
+/**
+ * React Component function : Error 404 page not found
+ */
 const Error404: FunctionComponent = () => {
   return (
     <div id="error404">

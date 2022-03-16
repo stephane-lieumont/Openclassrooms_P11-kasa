@@ -8,6 +8,9 @@ import Stars from "../components/Stars"
 import DropdownContent from "../components/DropdownContent"
 import Carousel from "../components/Carousel"
 
+/**
+ * React Component function : Housing sheet page
+ */
 const HousingSheet: FunctionComponent = () => {
   const { housingId } = useParams<string>()
   const [housingData, setHousingData] = useState<IHousingData>()
@@ -16,6 +19,7 @@ const HousingSheet: FunctionComponent = () => {
   const [sliderIsLoading, setSliderIsLoading] = useState<boolean>(true)
   const [avatarIsLoading, setAvatarIsLoading] = useState<boolean>(true)
 
+  // Call Datas API
   useEffect(() => {
     HousingService.getById(housingId!)
       .then(housing => {
@@ -34,10 +38,12 @@ const HousingSheet: FunctionComponent = () => {
     return <h2 className="text-center">Oups il y a eu un problème</h2>
   }
 
+  // Load Pictures inside carousel
   const handleLoadedPictures = () => {
     setSliderIsLoading(false)
   }
 
+  // Load image avatar author
   const avatarLoaded = () => {
     setAvatarIsLoading(false)
   }

@@ -14,7 +14,15 @@ type HeaderPicturesProps = {
   isLoading?: boolean
 }
 
-
+/**
+ * React Component function : Head Pictrures
+ * @param props Component props
+ * @param props.content Inner content text
+ * @param props.heightSize Change heightSize define options type
+ * @param props.children Inner content children elements
+ * @param props.isLoading Indicate if picture is loading
+ * @param props.overlay add background image whith darken colors
+ */
 const HeadPictures: FunctionComponent<HeaderPicturesProps> = ({content, heightSize, children, isLoading = false, overlay = false}: HeaderPicturesProps) => {
   return (
     <div className={

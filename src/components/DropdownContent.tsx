@@ -5,9 +5,16 @@ interface DropdownContentProps {
   title?: string;
 }
 
+/**
+ * React Component function : Dropdown content
+ * @param props Component props
+ * @param props.children Inner content children elements
+ * @param props.title Dropdown title
+ */
 const DropdownContent: FunctionComponent<DropdownContentProps> = ({children, title}: DropdownContentProps) => {
   const [expanded, setExpanded] = useState<boolean>(false)
 
+  // Toogle function to show content
   const toogleExpand = () => {
     setExpanded(!expanded)
   }

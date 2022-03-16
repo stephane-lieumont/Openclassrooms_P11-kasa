@@ -1,6 +1,9 @@
 import { FunctionComponent } from "react";
 import Logo from './../assets/logo.svg'
 
+/**
+ * React Component function : Footer layout
+ */
 const Footer: FunctionComponent = () => {  
   return (
     <footer>

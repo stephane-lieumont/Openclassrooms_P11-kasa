@@ -5,6 +5,11 @@ type StarsProps = {
   count: number,
 }
 
+/**
+ * React Component function : Stars
+ * @param props Component props
+ * @param props.count Rating number option
+ */
 const Stars: FunctionComponent<StarsProps> = ({count = 0}: StarsProps) => {
   const items = []
   const starsMax = 5

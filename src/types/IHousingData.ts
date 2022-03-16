@@ -1,5 +1,8 @@
 import iHostData from "./iHostData"
 
+/**
+ * Housing Data Model
+ */
 export default interface IHousingData {
   id?: any | null,
   title: string,

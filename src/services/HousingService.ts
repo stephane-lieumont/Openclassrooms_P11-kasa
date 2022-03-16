@@ -2,6 +2,10 @@ import IHousingData from "../types/IHousingData"
 
 const urlMockHousingsAll: string = process.env.PUBLIC_URL + "/mock/housings.json"
 
+/**
+ * Call API get all housings data
+ * @returns Object with housings data
+ */
 const getAll = async (): Promise<IHousingData[]> => {
   let response: any
   let data: Array<IHousingData>
@@ -17,6 +21,10 @@ const getAll = async (): Promise<IHousingData[]> => {
   return data
 };
 
+/**
+ * Call API get housing data with id
+ * @returns Object with housing data
+ */
 const getById = async (id: string): Promise<IHousingData> => {
   let response: any
   let allData: Array<IHousingData>
@@ -34,6 +42,9 @@ const getById = async (id: string): Promise<IHousingData> => {
   return data
 };
 
+/**
+ * HousingService : call API methods
+ */
 const HousingService = {
   getAll,
   getById

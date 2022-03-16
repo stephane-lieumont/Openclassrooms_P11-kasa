@@ -2,6 +2,9 @@ import { FunctionComponent } from "react"
 import { NavLink, Link } from 'react-router-dom'
 import Logo from './../assets/logo.svg'
 
+/**
+ * React Component function : Header layout
+ */
 const Header: FunctionComponent = () => {
   return (
     <header>
