@@ -25,10 +25,10 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Deliverables
-[React app Code](https://github.com/StephaneLi/StephaneLieumont_11_10032022)
+[React app Code](https://github.com/StephaneLi/StephaneLieumont_11_10032022)  
 [Code react Router](https://github.com/StephaneLi/StephaneLieumont_11_10032022/blob/main/src/index.tsx)  
-[Github-Page Demo](https://stephaneli.github.io/StephaneLieumont_11_10032022/)
-[Demo OVH server](https://oc.sli-3d.fr/P11_Kasa/)
+[Github-Page Demo](https://stephaneli.github.io/StephaneLieumont_11_10032022/)  
+[Demo OVH server](https://oc.sli-3d.fr/P11_Kasa/)  
 
 ##  Author
 
