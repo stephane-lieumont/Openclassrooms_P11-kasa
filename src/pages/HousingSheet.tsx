@@ -7,12 +7,15 @@ import Loader from "../components/Loader"
 import Stars from "../components/Stars"
 import DropdownContent from "../components/DropdownContent"
 import Carousel from "../components/Carousel"
+import { Navigate } from "react-router-dom"
 
 /**
  * React Component function : Housing sheet page
  */
 const HousingSheet: FunctionComponent = () => {
   const { housingId } = useParams<string>()
+  const { name } = useParams<string>()
+  const [error404, setError404] = useState<boolean>(false)
   const [housingData, setHousingData] = useState<IHousingData>()
   const [errorAPI, setErrorAPI] = useState<boolean>(false)
   const [isLoading, setIsLoading] = useState<boolean>(true)
@@ -21,17 +24,30 @@ const HousingSheet: FunctionComponent = () => {
 
   // Call Datas API
   useEffect(() => {
+    let housing: IHousingData
+
     HousingService.getById(housingId!)
-      .then(housing => {
-        setHousingData(housing)
+      .then(data => {
+        housing = data  
       })
       .catch(() => {
         setErrorAPI(true)
       })
-      .finally(() => {
+      .finally(() => {        
         setIsLoading(false)
+        // if url have bad id or name redirect to 404
+        if(!housing || name !== housing.title.replace(/ /g,"_")) {
+          setError404(true)
+        } else {
+          setHousingData(housing)
+        }
       })
-  }, [housingId])
+  }, [housingId, name])
+
+  // if data or id not exist redirect 404
+  if(error404){
+    return <Navigate  to='/error404' />
+  }
   
   // If error when call datas API
   if (errorAPI) {
