@@ -1,7 +1,6 @@
 header {
   display: flex;
   justify-content: center;
-  
 
   .container {
     display: flex;
@@ -15,7 +14,7 @@ header {
   }
 
   svg {
-    fill:#FF6060
+    fill: #ff6060;
   }
 
   nav {
@@ -28,11 +27,12 @@ header {
     li {
       list-style: none;
       a {
-        color:$primary;
+        color: $primary;
         text-decoration: none;
         white-space: nowrap;
 
-        &:hover, &.active {
+        &:hover,
+        &.active {
           text-decoration: underline;
         }
       }
@@ -43,10 +43,10 @@ header {
 @media (max-width: $screen-sm) {
   header {
     nav ul {
-      gap: spacer(1, 'sm');
+      gap: spacer(1, "sm");
 
       a {
-        font-size: .75rem;
+        font-size: 0.75rem;
         text-transform: uppercase;
       }
     }

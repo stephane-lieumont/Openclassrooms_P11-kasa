@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body{
-  padding:0;
+body {
+  padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 #root {
@@ -32,7 +34,22 @@ main {
   padding-bottom: spacer();
 }
 
-h2, h3, h4 {
+.demo-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(black, 0.5);
+  padding: 10px 100px;
+  color: white;
+  font-weight: 700;
+  transform: translate(70px, 50%) rotate(45deg);
+  z-index: 999;
+  opacity: 0.5;
+}
+
+h2,
+h3,
+h4 {
   font-size: 2rem;
   font-weight: 500;
   color: $primary;
@@ -45,14 +62,14 @@ h3 {
 }
 
 p {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: $primary;
 }
 
 li {
-  font-size:1.2rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
@@ -75,11 +92,11 @@ a {
   width: 64px;
   flex-shrink: 0;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 
   img {
     object-fit: cover;
-    width:100%;
+    width: 100%;
     min-height: 100%;
   }
 
@@ -94,18 +111,18 @@ a {
   }
 
   h2 {
-    font-size:1.3rem;
+    font-size: 1.3rem;
     line-height: normal;
   }
 
   h3 {
-    font-size:0.85rem;
+    font-size: 0.85rem;
     line-height: 1.8rem;
   }
 
-  main {    
-    padding: spacer(1, 'sm');
+  main {
+    padding: spacer(1, "sm");
     padding-top: 0;
-    gap: spacer(1.2, 'sm');
+    gap: spacer(1.2, "sm");
   }
 }

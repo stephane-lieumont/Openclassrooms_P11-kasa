@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding:spacer();
+  padding: spacer();
 
   &--absolute {
     position: absolute;
@@ -14,7 +14,7 @@
     z-index: 1;
   }
 
-  &--light{
+  &--light {
     opacity: 0.5;
 
     .loader {

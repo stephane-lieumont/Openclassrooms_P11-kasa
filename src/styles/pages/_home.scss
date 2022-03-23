@@ -6,7 +6,7 @@
   padding: spacer();
   background-color: $greyLight;
   border-radius: 25px;
-  gap:spacer(1);
+  gap: spacer(1);
 }
 
 @media (max-width: $screen-sm) {
@@ -16,7 +16,7 @@
     padding: 0;
     background-color: transparent;
     width: 100%;
-    gap:spacer(1, 'sm');
+    gap: spacer(1, "sm");
 
     li {
       width: 100%;
@@ -26,6 +26,6 @@
 
 @media (max-width: $screen-md) {
   .housings-list {
-    gap:spacer(1, 'sm');
+    gap: spacer(1, "sm");
   }
 }
