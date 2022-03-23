@@ -61,6 +61,7 @@ const Carousel: FunctionComponent<CarouselProps> = ({title, pictures = [], handl
 
   // Loading all pictures
   useEffect(() => {
+    console.log(picturesLoaded)
     if(picturesLoaded === nbrPictures) {
       handleLoad()
     }

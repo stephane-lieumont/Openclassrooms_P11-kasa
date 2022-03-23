@@ -56,7 +56,10 @@ const HousingSheet: FunctionComponent = () => {
 
   // Load Pictures inside carousel
   const handleLoadedPictures = () => {
-    setSliderIsLoading(false)
+    const timer = setTimeout(() => {
+      setSliderIsLoading(false)
+      clearTimeout(timer)  
+    },700)      
   }
 
   // Load image avatar author

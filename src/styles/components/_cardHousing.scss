@@ -53,9 +53,23 @@
       &:hover { 
         transition-delay: 0s!important;
         transition-duration: 0.15s!important ;
-        opacity: 0.5!important;
+        opacity: 0.8!important;
       }
     }
+
+
+  }
+
+  &::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: $gradient-dark;
+    z-index: 2;
+    pointer-events: none;
   }
 }
 
