@@ -17,17 +17,8 @@
     },
     "rating": "5",
     "location": "Ile de France - Paris 17e",
-    "equipments": [
-      "Équipements de base",
-      "Micro-Ondes",
-      "Douche italienne",
-      "Frigo",
-      "WIFI"
-    ],
-    "tags": [
-      "Batignolle",
-      "Montmartre"
-    ]
+    "equipments": ["Équipements de base", "Micro-Ondes", "Douche italienne", "Frigo", "WIFI"],
+    "tags": ["Batignolle", "Montmartre"]
   },
   {
     "id": "b9123946",
@@ -56,11 +47,7 @@
       "Cuisine équipée",
       "Télévision"
     ],
-    "tags": [
-      "Canal Saint Martin",
-      "République",
-      "Appartement"
-    ]
+    "tags": ["Canal Saint Martin", "République", "Appartement"]
   },
   {
     "id": "46d188c5",
@@ -79,17 +66,8 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 20e",
-    "equipments": [
-      "Wi-fi",
-      "Cuisine équipée",
-      "Télévision",
-      "Sèche Cheveux"
-    ],
-    "tags": [
-      "Buttes Chaumont",
-      "Laumière",
-      "Studio"
-    ]
+    "equipments": ["Wi-fi", "Cuisine équipée", "Télévision", "Sèche Cheveux"],
+    "tags": ["Buttes Chaumont", "Laumière", "Studio"]
   },
   {
     "id": "7af00cd6",
@@ -108,19 +86,8 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 11e",
-    "equipments": [
-      "Micro-Ondes",
-      "Wi-fi",
-      "Chambre Séparée",
-      "Climatisation",
-      "Télévision"
-    ],
-    "tags": [
-      "Parmentier",
-      "Marais",
-      "Parc",
-      "Night Life"
-    ]
+    "equipments": ["Micro-Ondes", "Wi-fi", "Chambre Séparée", "Climatisation", "Télévision"],
+    "tags": ["Parmentier", "Marais", "Parc", "Night Life"]
   },
   {
     "id": "0979876d",
@@ -141,17 +108,8 @@
     },
     "rating": "5",
     "location": "Ile de France - Paris 10e",
-    "equipments": [
-      "Frigo Américain",
-      "Sèche Cheveux",
-      "Wi-fi",
-      "Chambre Séparée",
-      "Parking"
-    ],
-    "tags": [
-      "Goncourt",
-      "Proche commerces"
-    ]
+    "equipments": ["Frigo Américain", "Sèche Cheveux", "Wi-fi", "Chambre Séparée", "Parking"],
+    "tags": ["Goncourt", "Proche commerces"]
   },
   {
     "id": "f72a452f",
@@ -171,15 +129,8 @@
     },
     "rating": "5",
     "location": "Ile de France - Paris 18e",
-    "equipments": [
-      "Chambre Séparée",
-      "Parking"
-    ],
-    "tags": [
-      "Montmartre",
-      "Culture",
-      "Charme"
-    ]
+    "equipments": ["Chambre Séparée", "Parking"],
+    "tags": ["Montmartre", "Culture", "Charme"]
   },
   {
     "id": "b4c67936",
@@ -198,19 +149,8 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 18e",
-    "equipments": [
-      "Salle de bains",
-      "Frigo",
-      "Wi-fi",
-      "Sèche Cheveux",
-      "Bureau",
-      "Parking"
-    ],
-    "tags": [
-      "Transports",
-      "Cheap",
-      "18ème"
-    ]
+    "equipments": ["Salle de bains", "Frigo", "Wi-fi", "Sèche Cheveux", "Bureau", "Parking"],
+    "tags": ["Transports", "Cheap", "18ème"]
   },
   {
     "id": "bc6f7112",
@@ -239,12 +179,7 @@
       "Lit King Size",
       "Ascenseur"
     ],
-    "tags": [
-      "Luxe",
-      "Tour Eiffel",
-      "T3",
-      "6ème"
-    ]
+    "tags": ["Luxe", "Tour Eiffel", "T3", "6ème"]
   },
   {
     "id": "cb2f9222",
@@ -264,18 +199,8 @@
     },
     "rating": "4",
     "location": "Ile de France - Paris 14e",
-    "equipments": [
-      "Climatisation",
-      "Machine à laver",
-      "Sèche Cheveux",
-      "Wi-fi",
-      "Parking"
-    ],
-    "tags": [
-      "Montparnasse",
-      "Commerces",
-      "Famille"
-    ]
+    "equipments": ["Climatisation", "Machine à laver", "Sèche Cheveux", "Wi-fi", "Parking"],
+    "tags": ["Montparnasse", "Commerces", "Famille"]
   },
   {
     "id": "d60ca600",
@@ -294,20 +219,8 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 11e",
-    "equipments": [
-      "Vue Parc",
-      "Chauffage",
-      "Sèche linge",
-      "Sèche Cheveux",
-      "Wi-fi",
-      "Ascenseur"
-    ],
-    "tags": [
-      "Père Lachaise",
-      "11e",
-      "Metro 3",
-      "Metro 2"
-    ]
+    "equipments": ["Vue Parc", "Chauffage", "Sèche linge", "Sèche Cheveux", "Wi-fi", "Ascenseur"],
+    "tags": ["Père Lachaise", "11e", "Metro 3", "Metro 2"]
   },
   {
     "id": "2cf259e1",
@@ -326,17 +239,8 @@
     },
     "rating": "4",
     "location": "Ile de France - Paris 11e",
-    "equipments": [
-      "Clic-clac",
-      "Four",
-      "Sèche Cheveux",
-      "Wi-fi"
-    ],
-    "tags": [
-      "Marais",
-      "Studio",
-      "Parc"
-    ]
+    "equipments": ["Clic-clac", "Four", "Sèche Cheveux", "Wi-fi"],
+    "tags": ["Marais", "Studio", "Parc"]
   },
   {
     "id": "5323c29b",
@@ -355,21 +259,8 @@
     },
     "rating": "3",
     "location": "Ile de France - Paris 3e",
-    "equipments": [
-      "Rangements",
-      "Lit",
-      "Sèche Cheveux",
-      "Wi-fi",
-      "TV",
-      "Bouilloire"
-    ],
-    "tags": [
-      "Marais",
-      "République",
-      "Studio",
-      "Proche Métros",
-      "Commerces"
-    ]
+    "equipments": ["Rangements", "Lit", "Sèche Cheveux", "Wi-fi", "TV", "Bouilloire"],
+    "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"]
   },
   {
     "id": "af6d2d48",
@@ -389,18 +280,8 @@
     },
     "rating": "5",
     "location": "Ile de France - Ecouen",
-    "equipments": [
-      "SDB",
-      "Cuisine équipée",
-      "Toilettes sèches",
-      "Frigo",
-      "Bouilloire"
-    ],
-    "tags": [
-      "Forêt",
-      "Nature",
-      "Musée d'Ecouen"
-    ]
+    "equipments": ["SDB", "Cuisine équipée", "Toilettes sèches", "Frigo", "Bouilloire"],
+    "tags": ["Forêt", "Nature", "Musée d'Ecouen"]
   },
   {
     "id": "7cbb378e",
@@ -430,11 +311,7 @@
       "Cintres",
       "Équipements de base"
     ],
-    "tags": [
-      "Forêt",
-      "Nature",
-      "Grande maison"
-    ]
+    "tags": ["Forêt", "Nature", "Grande maison"]
   },
   {
     "id": "ba55a0cc",
@@ -466,11 +343,7 @@
       "Micro-Ondes",
       "Parking"
     ],
-    "tags": [
-      "Nature",
-      "Groupe",
-      "Maison"
-    ]
+    "tags": ["Nature", "Groupe", "Maison"]
   },
   {
     "id": "1e181317",
@@ -490,20 +363,8 @@
     },
     "rating": "3",
     "location": "Ile de France - La Défense",
-    "equipments": [
-      "Baie vitrée",
-      "Télévision",
-      "Four",
-      "Frigo",
-      "Wi-fi",
-      "Micro-Ondes",
-      "Parking"
-    ],
-    "tags": [
-      "La Défense",
-      "Loft",
-      "Luxe"
-    ]
+    "equipments": ["Baie vitrée", "Télévision", "Four", "Frigo", "Wi-fi", "Micro-Ondes", "Parking"],
+    "tags": ["La Défense", "Loft", "Luxe"]
   },
   {
     "id": "1e180563",
@@ -523,18 +384,8 @@
     },
     "rating": "4",
     "location": "Ile de France - Levallois",
-    "equipments": [
-      "Télévision",
-      "Four",
-      "Frigo",
-      "Hotte",
-      "Wi-fi",
-      "Micro-Ondes"
-    ],
-    "tags": [
-      "Vue Parc",
-      "Apt de Charme"
-    ]
+    "equipments": ["Télévision", "Four", "Frigo", "Hotte", "Wi-fi", "Micro-Ondes"],
+    "tags": ["Vue Parc", "Apt de Charme"]
   },
   {
     "id": "2139a317",
@@ -550,15 +401,8 @@
     },
     "rating": "2",
     "location": "Ile de France - Paris 20e",
-    "equipments": [
-      "Bouilloire",
-      "Wi-fi",
-      "Micro-Ondes"
-    ],
-    "tags": [
-      "Vue Parc",
-      "Métros"
-    ]
+    "equipments": ["Bouilloire", "Wi-fi", "Micro-Ondes"],
+    "tags": ["Vue Parc", "Métros"]
   },
   {
     "id": "6ff132c6",
@@ -576,18 +420,8 @@
     },
     "rating": "4",
     "location": "Ile de France - Paris 13e",
-    "equipments": [
-      "Équipements de base",
-      "Four",
-      "Frigo",
-      "Wi-fi",
-      "Micro-Ondes"
-    ],
-    "tags": [
-      "Studio",
-      "Charmant",
-      "13e"
-    ]
+    "equipments": ["Équipements de base", "Four", "Frigo", "Wi-fi", "Micro-Ondes"],
+    "tags": ["Studio", "Charmant", "13e"]
   },
   {
     "id": "cb02d69b",
@@ -603,17 +437,7 @@
     },
     "rating": "4",
     "location": "Ile de France - Paris 13e",
-    "equipments": [
-      "Wi-fi",
-      "Équipements de base",
-      "Micro-Ondes",
-      "Frigo",
-      "Baignoire"
-    ],
-    "tags": [
-      "Louvre",
-      "Marais",
-      "Rivoli"
-    ]
+    "equipments": ["Wi-fi", "Équipements de base", "Micro-Ondes", "Frigo", "Baignoire"],
+    "tags": ["Louvre", "Marais", "Rivoli"]
   }
 ]

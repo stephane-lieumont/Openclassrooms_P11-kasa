@@ -1,24 +1,24 @@
-import IHousingData from "../types/IHousingData"
+import IHousingData from "../types/IHousingData";
 
-const urlMockHousingsAll: string = process.env.PUBLIC_URL + "/mock/housings.json"
+const urlMockHousingsAll: string = process.env.PUBLIC_URL + "/mock/housings.json";
 
 /**
  * Call API get all housings data
  * @returns Object with housings data
  */
 const getAll = async (): Promise<IHousingData[]> => {
-  let response: any
-  let data: Array<IHousingData>
+  let response: Response;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  let data: any;
 
   try {
-    response = await fetch(urlMockHousingsAll)
-    data = await response.json()
-
-  } catch (err: any) {
-    throw new Error('Erreur lors de la requete API :' + err)
+    response = await fetch(urlMockHousingsAll);
+    data = response.json();
+  } catch (err) {
+    throw new Error("Erreur lors de la requete API :" + err);
   }
 
-  return data
+  return data;
 };
 
 /**
@@ -26,20 +26,19 @@ const getAll = async (): Promise<IHousingData[]> => {
  * @returns Object with housing data
  */
 const getById = async (id: string): Promise<IHousingData> => {
-  let response: any
-  let allData: Array<IHousingData>
-  let data: IHousingData
+  let response: Response;
+  let allData: Array<IHousingData>;
+  let data: IHousingData;
 
   try {
-    response = await fetch(urlMockHousingsAll)
-    allData = await response.json()
-    data = allData.filter(housing => housing.id === id)[0]
-
-  } catch (err: any) {
-    throw new Error('Erreur lors de la requete API :' + err)
+    response = await fetch(urlMockHousingsAll);
+    allData = await response.json();
+    data = allData.filter((housing) => housing.id === id)[0];
+  } catch (err) {
+    throw new Error("Erreur lors de la requete API :" + err);
   }
 
-  return data
+  return data;
 };
 
 /**
@@ -47,6 +46,6 @@ const getById = async (id: string): Promise<IHousingData> => {
  */
 const HousingService = {
   getAll,
-  getById
+  getById,
 };
 export default HousingService;

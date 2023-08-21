@@ -5,11 +5,11 @@
   height: 340px;
   width: 340px;
   opacity: 0;
-  background: $primary;  
+  background: $primary;
 
   @for $i from 0 through 50 {
     &--#{$i} {
-      animation: reveal .4s ease-out both;
+      animation: reveal 0.4s ease-out both;
       animation-delay: 0.15s * $i;
     }
   }
@@ -17,8 +17,8 @@
   &::before {
     content: "";
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: $gradient-dark;
@@ -26,9 +26,9 @@
 
   h3 {
     position: absolute;
-    bottom:0;
-    left:0;
-    padding:15px;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
     line-height: 1.5rem;
     color: white;
     font-size: 1.2rem;
@@ -50,21 +50,19 @@
       opacity: 1;
       transition: opacity 0.3s ease-in-out;
 
-      &:hover { 
-        transition-delay: 0s!important;
-        transition-duration: 0.15s!important ;
-        opacity: 0.8!important;
+      &:hover {
+        transition-delay: 0s !important;
+        transition-duration: 0.15s !important ;
+        opacity: 0.8 !important;
       }
     }
-
-
   }
 
-  &::after{
-    content:"";
+  &::after {
+    content: "";
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: $gradient-dark;
@@ -86,7 +84,7 @@
 
 @media (max-width: $screen-sm) {
   .card-housing {
-    flex-grow: 1 ;
+    flex-grow: 1;
     height: 255px;
     width: 100%;
   }

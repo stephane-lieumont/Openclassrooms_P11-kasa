@@ -1,31 +1,31 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from './layout/Header'
-import Footer from './layout/Footer'
+import Footer from "./layout/Footer";
+import Header from "./layout/Header";
+import About from "./pages/About";
+import Error404 from "./pages/Error404";
+import Home from "./pages/Home";
+import HousingSheet from "./pages/HousingSheet";
+import "./styles/main.scss";
 
-import Home from './pages/Home'
-import About from './pages/About'
-import HousingSheet from './pages/HousingSheet'
-import Error404 from './pages/Error404'
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
-import './styles/main.scss'
-
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <Router basename={process.env.PUBLIC_URL}>
+      {process.env.REACT_APP_DEMO && <div className="demo-banner">DEMO</div>}
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />        
+          <Route path="/" element={<Home />} />
           <Route path="/fiche-logement/:housingId/:name" element={<HousingSheet />} />
           <Route path="/a-propos-de-kasa" element={<About />} />
-          <Route path="*" element={<Error404 />}/>
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </main>
       <Footer />
     </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
