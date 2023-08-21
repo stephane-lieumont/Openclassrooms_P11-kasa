@@ -13,7 +13,7 @@ import "./styles/main.scss";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Router basename={process.env.PUBLIC_URL}>
       {process.env.REACT_APP_DEMO && <div className="demo-banner">DEMO</div>}
       <Header />
@@ -27,5 +27,5 @@ root.render(
       </main>
       <Footer />
     </Router>
-  </React.StrictMode>
+  </React.Fragment>
 );

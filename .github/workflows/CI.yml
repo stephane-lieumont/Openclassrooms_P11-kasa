@@ -41,7 +41,7 @@ jobs:
         with:
           context: .
           build-args: |
-            "PUBLIC_URL=${{ secrets.PUBLIC_URL }}"
+            "PUBLIC_URL=/demo/openclassrooms-kasa"
             "REACT_APP_DEMO=true"
           push: true
           tags: ghcr.io/stephane-lieumont/oc-kasa:latest

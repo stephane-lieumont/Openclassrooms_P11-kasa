@@ -1,18 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap");
 // Adstract
-@import "./abstracts/variables", "./abstracts/functions";
+@import "./abstracts/variables";
+@import "./abstracts/functions";
 
 // Theme
 @import "./themes/colors";
 
 // Base
-@import "./base/reset", "./base/base";
+@import "./base/reset";
+@import "./base/base";
 
 // Layout
-@import "./layout/header", "./layout/footer";
+@import "./layout/header";
+@import "./layout/footer";
 
 // Components
-@import "./components/headPicture", "./components/cardHousing", "./components/loader",
-  "./components/stars", "./components/dropdownContent", "./components/carousel";
+@import "./components/headPicture";
+@import "./components/cardHousing";
+@import "./components/loader";
+@import "./components/stars";
+@import "./components/dropdownContent";
+@import "./components/carousel";
 
 // Pages
-@import "./pages/error404", "./pages/home", "./pages/housingSheet", "./pages/about";
+@import "./pages/error404";
+@import "./pages/home";
+@import "./pages/housingSheet";
+@import "./pages/about";

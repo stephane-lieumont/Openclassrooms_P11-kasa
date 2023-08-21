@@ -58,7 +58,7 @@
 
     &__next,
     &__previous {
-      background-image: url(../../assets/arrow-next.svg);
+      background-image: url("../../assets/arrow-next.svg");
       background-position: center;
       background-repeat: no-repeat;
       height: 80px;
@@ -81,7 +81,7 @@
       &__previous {
         height: 20px;
         width: 10px;
-        background-image: url(../../assets/arrow-next-sm.svg);
+        background-image: url("../../assets/arrow-next-sm.svg");
       }
     }
 
