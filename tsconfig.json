@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -18,10 +19,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "outDir": "./dist"
   },
-  "include": [
-    "src",
-    "src/custom.d.ts"
-  ]
+  "compileOnSave": true,
+  "moduleNameMapper": {
+    "^~/(.*)$": "<rootDir>/src/$1"
+  },
+  "include": ["src", "src/custom.d.ts"]
 }

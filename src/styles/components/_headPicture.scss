@@ -5,10 +5,13 @@
   border-radius: 25px;
   overflow: hidden;
 
-  &__loader, &__container, &__overlay::before, &__content {
+  &__loader,
+  &__container,
+  &__overlay::before,
+  &__content {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
   }
@@ -21,13 +24,13 @@
     z-index: 2;
     img {
       object-fit: cover;
-      min-width: 100%;      
+      min-width: 100%;
     }
   }
 
   &__overlay {
     &::before {
-      content: '';
+      content: "";
       background-color: rgba($color: #000000, $alpha: 0.5);
       z-index: 3;
     }
@@ -39,7 +42,7 @@
     align-items: center;
     transform: translateY(50px);
     z-index: 4;
-    
+
     h2 {
       color: white;
       font-size: 3rem;
@@ -64,31 +67,38 @@
     }
   }
 
-  .loading, &.loading::before  {
-    opacity: 0!important;
+  .loading,
+  &.loading::before {
+    opacity: 0 !important;
   }
 
-  [class*="loaded-"], &[class*="loaded-"]::before {
-    opacity: 1!important;
-    transition: opacity .3s ease-in-out, transform .5s ease-out;
+  [class*="loaded-"],
+  &[class*="loaded-"]::before {
+    opacity: 1 !important;
+    transition:
+      opacity 0.3s ease-in-out,
+      transform 0.5s ease-out;
     transform: translateY(0px);
   }
 
-  .loaded-1, &.loaded-1::before {
-    transition-delay: .1s;
+  .loaded-1,
+  &.loaded-1::before {
+    transition-delay: 0.1s;
   }
-  .loaded-2, &.loaded-2::before {
-    transition-delay: .4s;
+  .loaded-2,
+  &.loaded-2::before {
+    transition-delay: 0.4s;
   }
-  .loaded-3, &.loaded-3::before {
-    transition-delay: .8s;
+  .loaded-3,
+  &.loaded-3::before {
+    transition-delay: 0.8s;
   }
 }
 
 @media (max-width: $screen-sm) {
   .head-picture {
     border-radius: 10px;
-    
+
     h2 {
       font-size: 1.5rem;
       line-height: normal;
@@ -96,7 +106,7 @@
 
     &--medium {
       height: $img-height-sm-medium;
-  
+
       img {
         height: $img-height-sm-medium;
       }
@@ -104,7 +114,7 @@
 
     &--large {
       height: $img-height-sm-large;
-  
+
       img {
         height: $img-height-sm-large;
       }

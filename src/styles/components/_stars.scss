@@ -1,19 +1,18 @@
 .stars {
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
 
-  &__item{
-    &--active{
+  &__item {
+    &--active {
       fill: $primary;
     }
-    &--off{
-      fill: $grey
+    &--off {
+      fill: $grey;
     }
   }
 }
-
 
 @media (max-width: $screen-sm) {
   .stars {

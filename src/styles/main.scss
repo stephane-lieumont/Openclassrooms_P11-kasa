@@ -1,34 +1,18 @@
 // Adstract
-@import 
-  './abstracts/variables',
-  './abstracts/functions';
+@import "./abstracts/variables", "./abstracts/functions";
 
 // Theme
-@import
-  './themes/colors';
+@import "./themes/colors";
 
 // Base
-@import
-  './base/reset',
-  './base/base';
+@import "./base/reset", "./base/base";
 
 // Layout
-@import
-  './layout/header',
-  './layout/footer';
+@import "./layout/header", "./layout/footer";
 
 // Components
-@import
-  './components/headPicture',
-  './components/cardHousing',
-  './components/loader',
-  './components/stars',
-  './components/dropdownContent',
-  './components/carousel';
+@import "./components/headPicture", "./components/cardHousing", "./components/loader",
+  "./components/stars", "./components/dropdownContent", "./components/carousel";
 
 // Pages
-@import
-  './pages/error404',
-  './pages/home',
-  './pages/housingSheet',
-  './pages/about';
+@import "./pages/error404", "./pages/home", "./pages/housingSheet", "./pages/about";

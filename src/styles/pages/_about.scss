@@ -4,21 +4,21 @@
   justify-content: center;
   align-items: center;
   gap: spacer();
-  margin-bottom:spacer();  
+  margin-bottom: spacer();
 }
 
 @media (max-width: $screen-sm) {
-  #about  {
+  #about {
     margin: 0;
   }
 
   .heading-lg {
     .head-picture {
       &--medium {
-        height: 223px!important;
-    
+        height: 223px !important;
+
         img {
-          height: 223px!important;
+          height: 223px !important;
         }
       }
     }

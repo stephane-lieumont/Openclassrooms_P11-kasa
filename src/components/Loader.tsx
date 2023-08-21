@@ -1,9 +1,9 @@
-import { FunctionComponent } from "react";
+import React from "react";
 
 type LoaderProps = {
-  absolute?: boolean,
-  light?: boolean
-} 
+  absolute?: boolean;
+  light?: boolean;
+};
 
 /**
  * React Component function : Loader
@@ -11,16 +11,20 @@ type LoaderProps = {
  * @param props.absolute Css position configuration
  * @param props.light Type color of loader
  */
-const Loader: FunctionComponent<LoaderProps> = ({absolute = false, light = false} : LoaderProps) => {
+const Loader: React.FunctionComponent<LoaderProps> = ({
+  absolute = false,
+  light = false,
+}: LoaderProps) => {
   return (
-    <div className={`loader-container 
-      ${ absolute && 'loader-container--absolute' }
-      ${ light && 'loader-container--light' }
-    `}>
-      <div className="loader"> 
-      </div>
+    <div
+      className={`loader-container 
+      ${absolute && "loader-container--absolute"}
+      ${light && "loader-container--light"}
+    `}
+    >
+      <div className="loader"></div>
     </div>
   );
-}
+};
 
 export default Loader;

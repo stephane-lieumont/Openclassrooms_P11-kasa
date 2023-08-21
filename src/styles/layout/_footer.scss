@@ -1,20 +1,20 @@
 footer {
-  display:flex;
+  display: flex;
   background-color: black;
   justify-content: center;
   align-items: center;
 
-  svg{
-    fill:white;
+  svg {
+    fill: white;
   }
 
   p {
-    margin-top:spacer();
+    margin-top: spacer();
     color: white;
   }
 
   .container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -25,8 +25,8 @@ footer {
 }
 
 @media (max-width: $screen-sm) {
-  footer {    
-    padding: spacer(1, 'sm');
+  footer {
+    padding: spacer(1, "sm");
     .container {
       padding: spacer();
     }
